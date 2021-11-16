@@ -20,7 +20,7 @@
       var dosbox = new Dosbox({
         id: "dosbox",
         onload: function (dosbox) {
-          dosbox.run("archive.zip", "");
+          dosbox.run("archive.zip", "imgmount c window~1.img -size 512,63,16,142 -t hdd -fs none");
         },
         onrun: function (dosbox, app) {
           console.log("App '" + app + "' is runned");
